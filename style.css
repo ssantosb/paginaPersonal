@@ -1,0 +1,61 @@
+.jumbotron {
+  margin-top: auto;
+  background-image: url("banner.png");
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+  margin-bottom: auto;
+}
+
+#projects {
+  background-color: #adefd1ff;
+  padding-top: 2rem;
+}
+
+.nav-item {
+  color: white;
+}
+#nav1 {
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  background-image: url("banner.png");
+  position: fixed;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+  }
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  display: inline;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+#titulo {
+  padding-bottom: 15px;
+
+}
+#colegio {
+  color: black;
+}
+#slides {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}

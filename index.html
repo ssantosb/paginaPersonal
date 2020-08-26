@@ -2,99 +2,292 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <h1>Sobre mi</h1>
-    <img src="Foto.png" alt="Foto personal" width="250" height="300" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Web Page</title>
   </head>
   <body>
-    <nav class="menu">
-      <ul>
-        <li><a href="#bnv">Mensaje de bienvenida</a></li>
-        <li><a href="#bio">Datos biográficos</a></li>
-        <li><a href="#aca">Datos académicos</a></li>
-        <li><a href="#int">Sitios de interés</a></li>
-        <li><a href="#con">Formulario de contacto</a></li>
-      </ul>
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">My website</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#ab">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">My projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#int">My interests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#int1">Academic information</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <main>
-      <article id="bnv">
-        <h1>Mensaje de bienvenida</h1>
-        <p>
-          Bienvenido a mi página web personal, mi nombre es Santiago Gamboa,
-          tengo 19 años y actualmente estudio ingeniería de sistemas e
-          ingeniería industrial en la universidad de los Andes.
+
+    <section
+      class="site-hero"
+      id="section-home"
+      data-stellar-background-ratio="0.5"
+      style="background-color: #adefd1ff;"
+    >
+      <div class="container">
+        <div class="row intro-text align-items-center justify-content-center">
+          <div class="col-md-10 text-center pt-5">
+            <img
+              id="foto"
+              src="Foto.png"
+              alt="Foto personal"
+              width="250"
+              height="300"
+            />
+            <h1 class="site-heading site-animate display-4">
+              Hello, I'm <strong class="d-block">Santiago Gamboa</strong>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="jumbotron jumbotron-fluid" id="ab">
+      <div class="container">
+        <h1 id="about" class="display-4">About me</h1>
+        <p class="lead">
+          I'm 19 years old and I'm currently studying the seventh semester of
+          Computer Science and Industrial Engineering at Uniandes. I'm
+          interested in software engineering and videogames development and look
+          forward to learn 3d animation as well as the use of musical software.
+          You cand find me on the following links:
         </p>
-      </article>
+        <a
+          href="https://www.youtube.com/channel/UCz59JKWgb9A3joyCKumjA-g?"
+          class="fa fa-youtube"
+        ></a>
+        <a href="https://twitter.com/TeemoAdOp3" class="fa fa-twitter"></a>
+      </div>
+    </div>
 
-      <h2 id="bio">Datos biográficos</h2>
-      <table>
-        <tr>
-          <th>Nombre</th>
-          <td>Santiago Esteban Gamboa Murillo</td>
-        </tr>
-        <tr>
-          <th>Fecha de nacimiento</th>
-          <td>Diciembre 19 de 2000</td>
-        </tr>
-        <tr>
-          <th>Ciudad de nacimiento</th>
-          <td>Bogotá</td>
-        </tr>
-        <tr>
-          <th>Pasatiempos</th>
-          <td>Ver series, jugar videojuegos, aprender sobre el desarrollo de videojuegos, jugar football, ver football y escuchar y apreciar la música</td>
-        </tr>
-        <tr>
-          <th>Comida favorita</th>
-          <td>Comida italiana en general, en específico pastas como lo son los raviolis, linguine, entre otras</td>
-        </tr>
-      </table>
+    <div id="projects" class="container-fluid padding">
+      <h1 id="titulo" class="text-center display-4">Some projects</h1>
+      <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <img
+            src="pmc.png"
+            alt="Mobile app feature"
+            width="220"
+            height="200"
+          />
+          <h3>PMC</h3>
+          <p>
+            I worked on a project to help people manage their time while they
+            are studying.
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <img
+            src="ratScape.png"
+            alt="Rat scape photo"
+            width="260"
+            height="200"
+          />
+          <h3>Gamejam project</h3>
+          <p>
+            I developed a short video game with some friends in a gamejam
+            organized by the Universidad de los Andes.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <img
+            src="Idiomas.png"
+            alt="Photo of the web page"
+            width="260"
+            height="200"
+          />
+          <h3>Idioms app</h3>
+          <p>
+            I developed a web page designed to connect people so that they can
+            learn languages and practice one with another.
+          </p>
+        </div>
+      </div>
 
-      <h2 id="aca">Datos académicos</h2>
-      <ul>
-        <li>Educación secundaria: Colegio Charles de Gaulle</li>
-        <li>Educación avanzada: Universidad de los Andes</li>
-        <li>Participante de varias gamejam organizadas por la universidad de los Andes</li>
+    </div>
+
+    <div class="container-fluid padding" style="background-image: url(banner.png);">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 id="int" class="display-4" style="color: white;">My interests</h1>
+        </div>
+        <hr />
+      </div>
+    </div>
+
+    <div class="container-fluid padding" style="background-image: url(banner.png); padding-bottom: 2rem;">
+      <div class="row padding">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="game.jpg" alt="Videogames" />
+            <div class="card-body">
+              <h4 class="card-title">Video games</h4>
+              <p class="card-text">
+                Ever since I was a kid I've always enjoyed playing video games.
+                I started playing videogames in a play station when I was around
+                4 years old, nowadays I look forward to being a competitive
+                player in a shooter called "Valorant".
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <iframe
+              src="https://giphy.com/embed/Qa4f2h4LaGPMVpSjhg"
+              width="600"
+              height="350"
+              frameborder="0"
+              class="giphy-embed card-img-top"
+              allowfullscreen
+            ></iframe>
+            <div class="card-body">
+              <h4 class="card-title">Football</h4>
+              <p class="card-text">
+                Even though I'm not a good player, I love watching football
+                matches, especially the Bundesliga ones. I'm a person who likes
+                to analyze football games in therms of statistics and
+                strategies. My favorite team is Bayern München from Germany.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="jon.jpg" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Music</h4>
+              <p class="card-text">
+                I'm a person who likes hearing music all the time, especially
+                music that tells stories or transmits feelings. My favorite
+                artist is Jon Bellion because of the passion he puts when he
+                composes songs. Down below, you can hear some of his songs.
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=TdWRBnYJk-Q&list=PLAvisopgVMmCDz27TKKyxY2nc9umhTzM1"
+                class="btn btn-outline-secondary"
+                >Click here!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid padding" style="background-color: #adefd1ff;">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 id="int1" class="display-4">Academic information</h1>
+        </div>
+        <hr />
+      </div>
+    </div>
+
+    <div id="slides" class="carousel slide text-center" data-ride="carousel" style="background-color: #adefd1ff;">
+      <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
       </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="colegio.jpg" alt="School" width="1032" height="500"class="responsive"/>
+          <div class="carousel-caption" id="colegio">
+            <h1 class="display-2">Basic Education</h1>
+            <p>
+              I graduated from a school called Colegio Charles de Gaulle in
+              201620
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="uniandes.jpg" alt="Uniandes" width="1032" height="500"class="responsive"/>
+          <div class="carousel-caption">
+            <h1 class="display-2">University</h1>
+            <p>
+              I started studying at Uniandes on 201720 and I'm currently on the
+              seventh semester of Computer science and Industrial engineering
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="coursera.png" alt="Coursera" width="1032" height="500" class="responsive"/>
+          <div class="carousel-caption">
+            <h1 class="display-2">Some courses</h1>
+            <p>
+              Recently, I started a videogame development course on coursera
+              dictated by a teacher from the university.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <h2 id="int">Sitios de interés</h2>
+    <footer>
+      <div class="container-fluid padding" style="background-color: #adefd1ff;">
+        <div class="row text-center">
+          <div>
+            <img src="footer.png" alt="footer" height="50" >
+          </div>
+        </div>
 
-      <ul>
-        <li>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/f9HtHbMG7no"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          >
-          </iframe>
-        </li>
-        <li>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/EtlZV2EaZBQ"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          >
-          </iframe>
-        </li>
-        <li>
-          <img src="cheemschucho.png" alt="Cheems" width="250" height="300" />
-        </li>
-      </ul>
-    </main>
+      </div>
 
-    <footer id="con">
-      <h2>Formulario de contacto</h2>
-      <a
-        href="https://www.youtube.com/channel/UCz59JKWgb9A3joyCKumjA-g?view_as=subscriber"
-        >Youtube</a
-      >
-      <a href="https://github.com/segamboa">Github</a>
     </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
