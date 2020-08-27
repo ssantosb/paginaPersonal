@@ -57,7 +57,7 @@
       class="site-hero"
       id="section-home"
       data-stellar-background-ratio="0.5"
-      style="background-color: #adefd1ff;"
+      style="background-color: #adefd1ff"
     >
       <div class="container">
         <div class="row intro-text align-items-center justify-content-center">
@@ -138,19 +138,24 @@
           </p>
         </div>
       </div>
-
     </div>
 
-    <div class="container-fluid padding" style="background-image: url(banner.png);">
+    <div
+      class="container-fluid padding"
+      style="background-image: url(banner.png)"
+    >
       <div class="row welcome text-center">
         <div class="col-12">
-          <h1 id="int" class="display-4" style="color: white;">My interests</h1>
+          <h1 id="int" class="display-4" style="color: white">My interests</h1>
         </div>
         <hr />
       </div>
     </div>
 
-    <div class="container-fluid padding" style="background-image: url(banner.png); padding-bottom: 2rem;">
+    <div
+      class="container-fluid padding"
+      style="background-image: url(banner.png); padding-bottom: 2rem"
+    >
       <div class="row padding">
         <div class="col-md-4">
           <div class="card">
@@ -191,7 +196,15 @@
 
         <div class="col-md-4">
           <div class="card">
-            <img class="card-img-top" src="jon.jpg" alt="" />
+            <iframe
+              class="giphy-embed card-img-top"
+              width="630"
+              height="330"
+              src="https://www.youtube.com/embed/EtlZV2EaZBQ"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
             <div class="card-body">
               <h4 class="card-title">Music</h4>
               <p class="card-text">
@@ -211,7 +224,7 @@
       </div>
     </div>
 
-    <div class="container-fluid padding" style="background-color: #adefd1ff;">
+    <div class="container-fluid padding" style="background-color: #adefd1ff">
       <div class="row welcome text-center">
         <div class="col-12">
           <h1 id="int1" class="display-4">Academic information</h1>
@@ -220,7 +233,12 @@
       </div>
     </div>
 
-    <div id="slides" class="carousel slide text-center" data-ride="carousel" style="background-color: #adefd1ff;">
+    <div
+      id="slides"
+      class="carousel slide text-center"
+      data-ride="carousel"
+      style="background-color: #adefd1ff"
+    >
       <ul class="carousel-indicators">
         <li data-target="#slides" data-slide-to="0" class="active"></li>
         <li data-target="#slides" data-slide-to="1"></li>
@@ -228,7 +246,13 @@
       </ul>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="colegio.jpg" alt="School" width="1032" height="500"class="responsive"/>
+          <img
+            src="colegio.jpg"
+            alt="School"
+            width="1032"
+            height="500"
+            class="responsive"
+          />
           <div class="carousel-caption" id="colegio">
             <h1 class="display-2">Basic Education</h1>
             <p>
@@ -238,7 +262,13 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="uniandes.jpg" alt="Uniandes" width="1032" height="500"class="responsive"/>
+          <img
+            src="uniandes.jpg"
+            alt="Uniandes"
+            width="1032"
+            height="500"
+            class="responsive"
+          />
           <div class="carousel-caption">
             <h1 class="display-2">University</h1>
             <p>
@@ -248,7 +278,13 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="coursera.png" alt="Coursera" width="1032" height="500" class="responsive"/>
+          <img
+            src="coursera.png"
+            alt="Coursera"
+            width="1032"
+            height="500"
+            class="responsive"
+          />
           <div class="carousel-caption">
             <h1 class="display-2">Some courses</h1>
             <p>
@@ -260,16 +296,36 @@
       </div>
     </div>
 
-    <footer>
-      <div class="container-fluid padding" style="background-color: #adefd1ff;">
-        <div class="row text-center">
-          <div>
-            <img src="footer.png" alt="footer" height="50" >
+    <footer
+      id="myFooter"
+      style="background-image: url(banner.png); padding-top: 1rem; padding-bottom: 1rem;"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h5>Thanks for visiting!</h5>
           </div>
-        </div>
-
-      </div>
-
+          <div class="col-sm-3">
+            <h5>My social media:</h5>
+                <a
+                  href="https://www.youtube.com/channel/UCz59JKWgb9A3joyCKumjA-g?"
+                  class="fa fa-youtube"
+                ></a>
+                <a
+                  href="https://twitter.com/TeemoAdOp3"
+                  class="fa fa-twitter"
+                ></a>
+          </div>
+          <div class="col-sm-3">
+            <h5>Daily song:</h5>
+            <audio controls>
+              <source
+                src="Coldplay - Everglow [Single Version] - (Official Video).mp3"
+                type="audio/mpeg"
+              />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
     </footer>
 
     <!-- Optional JavaScript -->
