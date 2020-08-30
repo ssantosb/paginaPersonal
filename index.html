@@ -62,6 +62,8 @@
       <div class="container">
         <div class="row intro-text align-items-center justify-content-center">
           <div class="col-md-10 text-center pt-5">
+            <!-- Recomendación: Las fotos de esta sección no son responsive y, por lo tanto, para tamaños pequeños no se adaptan a tal disminución. -->
+            <!-- Recomendación: Se podria usar las clases de responsive de bootstrap y evitar poner el tamaño a las fotos en pixeles y directamente en el HTML -->
             <img
               id="foto"
               src="Foto.png"
@@ -91,6 +93,8 @@
           href="https://www.youtube.com/channel/UCz59JKWgb9A3joyCKumjA-g?"
           class="fa fa-youtube"
         ></a>
+        <!-- Recomendación: Utilizar el valor de _blank para que el link se abra en una pestaña nueva, con el fin de mejorar la navegabilidad y experiencia -->
+
         <a href="https://twitter.com/TeemoAdOp3" class="fa fa-twitter"></a>
       </div>
     </div>
@@ -98,6 +102,9 @@
     <div id="projects" class="container-fluid padding">
       <h1 id="titulo" class="text-center display-4">Some projects</h1>
       <div class="row text-center padding">
+        <!-- Recomendación: Las fotos de esta sección no son responsive y, por lo tanto, para tamaños pequeños no se adaptan a tal disminución. -->
+        <!-- Recomendación: Se podria usar las clases de responsive de bootstrap y evitar poner el tamaño a las fotos en pixeles y directamente en el HTML -->
+
         <div class="col-xs-12 col-sm-6 col-md-4">
           <img
             src="pmc.png"
@@ -174,6 +181,7 @@
 
         <div class="col-md-4">
           <div class="card">
+            <!--Recomendación: Algunos de estos atributos están obsoletos. Podrias utilizar las clases de bootrsap para iframe que te facilitan embeber estos contenidos.-->
             <iframe
               src="https://giphy.com/embed/Qa4f2h4LaGPMVpSjhg"
               width="600"
@@ -307,9 +315,11 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-3">
+            <!-- Recomendación: No utilizar el tag h5, debido a que no semánticamente no hay un h4/h3 del cual sea subtitulo. Podria usar display-5 o modificar el tamaño con CSS -->
             <h5>Thanks for visiting!</h5>
           </div>
           <div class="col-sm-3">
+            <!-- Recomendación: No utilizar el tag h5, debido a que no semánticamente no hay un h4/h3 del cual sea subtitulo. Podria usar display-5 o modificar el tamaño con CSS -->
             <h5>My social media:</h5>
             <a
               href="https://www.youtube.com/channel/UCz59JKWgb9A3joyCKumjA-g?"
@@ -320,10 +330,7 @@
           <div class="col-sm-3">
             <h5>Daily song:</h5>
             <audio controls>
-              <source
-                src="everglow.mp3"
-                type="audio/mpeg"
-              />
+              <source src="everglow.mp3" type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
           </div>

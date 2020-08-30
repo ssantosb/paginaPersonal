@@ -24,11 +24,12 @@
 }
 
 .responsive {
-    max-width: 100%;
-    height: auto;
-    max-height: 500px;
-  }
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+}
 
+/* Se podrian mejorar los nombres de estas reglas de CSS para comprender mejor su funcionamiento desde HTML */
 .fa-youtube {
   background: #bb0000;
   color: white;
@@ -50,7 +51,6 @@
 
 #titulo {
   padding-bottom: 15px;
-
 }
 #colegio {
   color: black;
@@ -59,6 +59,6 @@
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
-footer{
+footer {
   color: white;
 }
